@@ -1,0 +1,68 @@
+@font-face { font-family: FEHFont; src: url('generalFEHFont.ttf'); }
+@font-face { font-family: FEHTitleFont; src: url('VenturisADF-BoldItalic.otf'); }
+
+html, body, div, span, p, main {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+html, body, div, span, main {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+}
+
+#titles {
+    font-family: 'FEHTitleFont';
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#navbar {
+    font-family: FEHTitleFont;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: 70%;
+    margin-top: 10px;
+}
+#navbar a {
+    color: white;
+    font-style: italic;
+}
+
+#subtitle {
+    margin-left: 25%;
+    text-align: center;
+    width: 50%;
+    margin-top: 50px;
+    font-family: FEHFont;
+}
+
+.psets {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 15px;
+    border: 1px solid silver;
+}
+.psets td, th{
+    font-family: FEHFont;
+    width: 40%;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.formBox {
+    font-family: FEHFont;
+    width: 80%;
+    height: 100%;
+}
+.formBox2 {
+    font-family: FEHFont;
+}

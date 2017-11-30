@@ -1,31 +1,114 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="utf-8">
         <title>Fire Emblem Heroes Summoning - A Monte Carlo Simulation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-        <style type="text/css">
-            @font-face { font-family: FEHFont; src: url('generalFEHFont.ttf'); }
-
-            html, body, div, span, p, main {
-                padding: 0px;
-                margin: 0px;
-                font-family: 'FEHFont';
-            }
-        </style>
     </head>
 
     <body>
 
         <header>
-
+            <div id="titles">
+                <p style="font-size: 300%">FIRE EMBLEM HEROES</p>
+                <p>A monte carlo summoning simulation</p>
+            </div>
         </header>
 
         <nav>
+            <div id="navbar">
+                <a href="help.html" class="navLink">How do I use this?</a>
+                &#x25cf;
+                <a href="bug.html" class="navLink">Report a Bug</a>
+            </div>
         </nav>
 
         <main>
-            <p style="font-family:FEHFont">Testing the new font</p>
+
+            <p id="subtitle"> Enter desired hero specifications below</p>
+
+            <div id="pset1" class="psets">
+                <form>
+                    <table>
+                        <tr>
+                            <th colspan="2">Set 1</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+
+                                <input id="hero1" class="formBox" list="Heroes" value="Hero">
+
+                            </td>
+                            <td>
+
+                                <select name="focus1" id="focus1" class="formBox">
+                                    <option value="Focus1">Focus1</option>
+                                    <option value="Focus2">Focus2</option>
+                                    <option value="Focus3">Focus3</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+
+                                <p style="font-size: 80%; display: inline">How Many? </p>
+                                <input style="width: 50px;" type="number" id="number1">
+
+                            </td>
+                            <td>
+
+                                <p style="font-size: 80%; display: inline">Current Rate:</p>
+                                <select name="rate1" id="rate1" class="formBox2">
+                                    <option value="1%">1%</option>
+                                    <option value="2%">2%</option>
+                                    <option value="3%">3%</option>
+                                </select>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+
+                                <select name="rarity1" id="rarity1" class="formBox2">
+                                    <option value="3 Star">3 Star</option>
+                                    <option value="4 Star">4 Star</option>
+                                    <option value="5 Star%">5 Star</option>
+                                </select>
+
+                            </td>
+                            <td>
+
+                                <input type="checkbox" id="freeSummon1" value="freeSummon" id="boxes">
+                                <p style="font-size: 90%; display: inline">Free Summon?</p>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+
+                                <input type="checkbox" id="ivs1" value="ivs1" id="boxes">
+                                <p style="font-size: 90%; display: inline">Specify IVs?</p>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+                </div>
+
+                <datalist id="Heroes">
+                    <option value="Cordelia">
+                    <option value="Lyn">
+                    <option value="Lucina">
+                    <option value="Takumi">
+            </form>
 
         </main>
 
