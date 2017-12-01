@@ -185,6 +185,17 @@ input::-webkit-input-placeholder {
     opacity: 0.8;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
 /*Radio Button code*/
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
