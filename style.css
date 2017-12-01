@@ -4,17 +4,30 @@
 html, body, div, span, p, main {
     padding: 0px;
     margin: 0px;
-    color: white;
+    color: black;
+}
+
+html {
+    background: black; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #545454, black, black, #545454);
+    background-image: url("img/Bg_Title.png");
+    background-repeat: repeat-x;
+    background-size:cover;
 }
 
 html, body, div, span, main {
     padding: 0px;
     margin: 0px;
     color: white;
-    background-color: black;
+
 }
 input, select {
     cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+}
+input::-webkit-input-placeholder {
+    color: #3B444B;
 }
 
 #titles {
@@ -23,6 +36,10 @@ input, select {
     width: 50%;
     text-align: center;
     margin-top: 30px;
+    background: linear-gradient(-45deg, #C49900, #FFF683);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 #navbar {
@@ -30,13 +47,13 @@ input, select {
     margin-left: 25%;
     width: 50%;
     text-align: center;
-    color: white;
+    color: black;
     font-weight: lighter;
     font-size: 70%;
     margin-top: 10px;
 }
 #navbar a {
-    color: white;
+    color: black;
     font-style: italic;
 }
 
@@ -75,6 +92,17 @@ input, select {
     font-family: FEHFont;
     width: 95%;
 }
+.formButton {
+    font-family: FEHFont;
+    width: 95%;
+    border: 1px solid black;
+}
+.formButton:hover {
+    background-color: silver;
+}
+.formButton:active {
+    background-color: grey;
+}
 .formNumBox {
     font-family: FEHFont;
 }
@@ -85,4 +113,26 @@ input, select {
 }
 .herotable td {
     width: 25%;
+}
+
+.ivtable {
+    text-align: center;
+    width: 100%;
+
+}
+.ivtable td {
+    width: 30%;
+}
+
+/*Radio Button code*/
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid green;
 }
