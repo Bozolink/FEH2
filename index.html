@@ -21,7 +21,7 @@
             <div id="navbar">
                 <a href="help.html" class="navLink">How do I use this?</a>
                 &#x25cf;
-                <a href="bug.html" class="navLink">Report a Bug</a>
+                <a href="contact.html" class="navLink">Contact Us</a>
             </div>
         </nav>
 
@@ -30,49 +30,37 @@
             <p id="subtitle"> Enter desired hero specifications below</p>
 
             <div id="pset1" class="psets">
+                <p class="subtitle">Set 1</p>
                 <form>
-                    <table>
-                        <tr>
-                            <th colspan="2">Set 1</th>
-                        </tr>
 
+                    <select name="focus1" id="focus1" class="formBox">
+                        <option value="Focus1">Focus1</option>
+                        <option value="Focus2">Focus2</option>
+                        <option value="Focus3">Focus3</option>
+                    </select>
+
+                    &nbsp;&nbsp;
+
+                    <p style="display: inline">Current Rate:</p>
+                    <select name="rate1" id="rate1" class="formNumBox">
+                        <option value="1%">1%</option>
+                        <option value="2%">2%</option>
+                        <option value="3%">3%</option>
+                    </select>
+
+                    &nbsp;&nbsp;
+
+                    <input type="checkbox" id="freeSummon1" value="freeSummon" id="boxes">
+                    <p style="display: inline">Free Summon?</p>
+
+                    <table id="hero1-1" class="herotable">
                         <tr>
                             <td>
 
-                                <input id="hero1" class="formBox" list="Heroes" value="Hero">
+                                <input id="hero1" class="formBox2" list="Heroes" value="Hero">
 
                             </td>
-                            <td>
 
-                                <select name="focus1" id="focus1" class="formBox">
-                                    <option value="Focus1">Focus1</option>
-                                    <option value="Focus2">Focus2</option>
-                                    <option value="Focus3">Focus3</option>
-                                </select>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-
-                                <p style="font-size: 80%; display: inline">How Many? </p>
-                                <input style="width: 50px;" type="number" id="number1">
-
-                            </td>
-                            <td>
-
-                                <p style="font-size: 80%; display: inline">Current Rate:</p>
-                                <select name="rate1" id="rate1" class="formBox2">
-                                    <option value="1%">1%</option>
-                                    <option value="2%">2%</option>
-                                    <option value="3%">3%</option>
-                                </select>
-
-                            </td>
-                        </tr>
-
-                        <tr>
                             <td>
 
                                 <select name="rarity1" id="rarity1" class="formBox2">
@@ -82,25 +70,24 @@
                                 </select>
 
                             </td>
+
                             <td>
 
-                                <input type="checkbox" id="freeSummon1" value="freeSummon" id="boxes">
-                                <p style="font-size: 90%; display: inline">Free Summon?</p>
-
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td colspan="2">
-
-                                <input type="checkbox" id="ivs1" value="ivs1" id="boxes">
-                                <p style="font-size: 90%; display: inline">Specify IVs?</p>
+                                <p style="font-size: 80%; display: inline">How Many? </p>
+                                <input style="width: 50px;" type="number" id="number1" value=1>
 
                             </td>
 
-                        </tr>
+                            <td>
 
+                                <input type="button" id="ivs1" value="Specify IVs v" id="ivButton1" class="formBox2">
+
+                            </td>
+
+
+                        </tr>
                     </table>
+
                 </div>
 
                 <datalist id="Heroes">
@@ -108,6 +95,7 @@
                     <option value="Lyn">
                     <option value="Lucina">
                     <option value="Takumi">
+                </datalist>
             </form>
 
         </main>
