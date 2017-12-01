@@ -1,5 +1,9 @@
 
 function showhide(str) {
+    hiddenRow = document.getElementById("hiddenRow" + str);
+    if (hiddenRow.className == "active") {
+        hiddenRow.className = "notActive";
+    } else hiddenRow.className = "active";
     var x = document.getElementById("ivs" + str);
     if (x.style.display === "none") {
         x.style.display = "block";

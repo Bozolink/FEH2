@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>Fire Emblem Heroes Summoning - A Monte Carlo Simulation</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
         <script type="text/javascript" src="indexScript.js"></script>
 
     </head>
@@ -59,7 +60,7 @@
                     </label>
 
                     <table id="hero1-1" class="herotable">
-                        <tr>
+                        <tr class="active">
                             <td>
 
                                 <input id="hero1" class="formBox2" list="Heroes" placeholder="Hero">
@@ -93,9 +94,9 @@
 
                         </tr>
                     <!-- </table> -->
-                        <tr>
-                            <td colspan="3"></td>
-                            <td>
+                        <tr id="hiddenRow11">
+                            <td colspan="3"><div></div></td>
+                            <td><div>
                                 <table id="ivs11" class="ivtable" style="display:none">
                                     <tr>
                                         <td>
@@ -178,9 +179,10 @@
                                     </tr>
 
                                 </table>
-                            </td>
+                            </div></td>
                         </tr>
                     </table>
+                    <div id="addhero12" class="plusBox">+</div>
                 </div>
 
                 <datalist id="Heroes">
