@@ -7,11 +7,16 @@ html, body, div, span, p, main {
     color: white;
 }
 
+html {
+    background: black; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #545454, black, black, #545454);
+}
+
 html, body, div, span, main {
     padding: 0px;
     margin: 0px;
     color: white;
-    background-color: black;
+
 }
 input, select {
     cursor: pointer;
@@ -23,6 +28,9 @@ input, select {
     width: 50%;
     text-align: center;
     margin-top: 30px;
+    background: linear-gradient(-45deg, #C49900, #FFF683);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #navbar {
@@ -75,6 +83,17 @@ input, select {
     font-family: FEHFont;
     width: 95%;
 }
+.formButton {
+    font-family: FEHFont;
+    width: 95%;
+    border: none;
+}
+.formButton:hover {
+    background-color: silver;
+}
+.formButton:active {
+    background-color: grey;
+}
 .formNumBox {
     font-family: FEHFont;
 }
@@ -85,4 +104,26 @@ input, select {
 }
 .herotable td {
     width: 25%;
+}
+
+.ivtable {
+    text-align: center;
+    width: 100%;
+
+}
+.ivtable td {
+    width: 30%;
+}
+
+/*Radio Button code*/
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid green;
 }
