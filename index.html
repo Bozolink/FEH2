@@ -10,6 +10,7 @@
     </head>
 
     <body>
+        <div id="overlay" style="display:none"></div>
 
         <header>
             <div id="titles">
@@ -27,6 +28,7 @@
         </nav>
 
         <main>
+
 
             <p id="subtitle"> Enter desired hero specifications below</p>
 
@@ -51,8 +53,10 @@
 
                     &nbsp;&nbsp;
 
+
                     <input type="checkbox" id="freeSummon1" value="freeSummon" id="boxes">
-                    <p style="display: inline">Free Summon?</p>
+                    <label for="freeSummon1" style="display: inline">Free Summon?
+                    </label>
 
                     <table id="hero1-1" class="herotable">
                         <tr>
@@ -65,9 +69,10 @@
                             <td>
 
                                 <select name="rarity1" id="rarity1" class="formBox2">
-                                    <option value="3 Star">3 Star</option>
+                                    <option value="5 Star Focus">5 Star Focus</option>
+                                    <option value="5 Star">5 Star</option>
                                     <option value="4 Star">4 Star</option>
-                                    <option value="5 Star%">5 Star</option>
+                                    <option value="3 Star%">3 Star</option>
                                 </select>
 
                             </td>
@@ -185,6 +190,8 @@
                     <option value="Takumi">
                 </datalist>
             </form>
+            <input type="button" value="Simulate!" id="simulateButton" onclick="fornow()">
+            <img src="img/summoningshort.gif" style="display:none" id="gif">
 
         </main>
 

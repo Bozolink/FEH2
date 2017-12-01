@@ -7,3 +7,11 @@ function showhide(str) {
         x.style.display = "none";
     }
 }
+
+function fornow() {
+    var gif = document.getElementById("gif");
+    var overlay = document.getElementById("overlay");
+    gif.style.display = "block";
+    overlay.style.display = "block";
+
+}
