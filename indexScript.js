@@ -4,6 +4,7 @@ function showhide(str) {
     if (hiddenRow.className == "active") {
         hiddenRow.className = "notActive";
     } else hiddenRow.className = "active";
+
     var x = document.getElementById("ivs" + str);
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -17,5 +18,6 @@ function fornow() {
     var overlay = document.getElementById("overlay");
     gif.style.display = "block";
     overlay.style.display = "block";
+    overlay.style.opacity = 0.7;
 
 }

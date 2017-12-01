@@ -48,7 +48,8 @@ input::-webkit-input-placeholder {
     height: 100%;
     top: 0px;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 #titles {
@@ -116,25 +117,22 @@ input::-webkit-input-placeholder {
     font-family: FEHFont;
     width: 15%;
     margin:10px;
+
 }
 .formBox2 {
     font-family: FEHFont;
     width: 95%;
 }
-.formBox:hover, .formBox2:hover {
+.formBox:hover, .formBox2:hover, .formNumBox:hover, .formButton:hover {
     background-color: black;
     opacity:0.3;
     color: white;
+    transition: background-color 0.3s ease-in-out;
 }
 .formButton {
     font-family: FEHFont;
     width: 95%;
     border: 1px solid black;
-}
-.formButton:hover {
-    background-color: black;
-    opacity:0.3;
-    color: white;
 }
 .formButton:active {
     background-color: grey;
@@ -172,7 +170,7 @@ input::-webkit-input-placeholder {
     margin-left: 42.25%;
     margin-top: 30px;
     margin-bottom: 20px;
-
+    transition: opacity 0.3s ease-in-out;
 }
 .plusBox:hover {
     cursor: pointer;
