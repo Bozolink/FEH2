@@ -53,8 +53,8 @@ input::-webkit-input-placeholder {
 }
 
 #titleimage {
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
+    margin: 0px;
 }
 
 #titles {
