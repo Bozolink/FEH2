@@ -13,6 +13,9 @@ html, body, div, span, main {
     color: white;
     background-color: black;
 }
+input, select {
+    cursor: pointer;
+}
 
 #titles {
     font-family: 'FEHTitleFont';
