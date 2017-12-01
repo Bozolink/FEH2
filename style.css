@@ -13,6 +13,7 @@ html {
     background-image: url("img/Bg_Title.png");
     background-repeat: repeat-x;
     background-size:cover;
+    background-color: black;
 }
 
 .test {
@@ -49,6 +50,11 @@ input::-webkit-input-placeholder {
     top: 0px;
     opacity:0.7;
     transition: background-color 0.3s ease-in-out;
+}
+
+#titleimage {
+    width: 50%;
+    margin-left: 25%;
 }
 
 #titles {
