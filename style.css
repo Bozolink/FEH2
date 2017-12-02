@@ -37,7 +37,7 @@ input::-webkit-input-placeholder {
     color: #3B444B;
 }
 
-p, label {
+.labels {
     font-family: FEHFont;
     font-size: 80%;
 }
