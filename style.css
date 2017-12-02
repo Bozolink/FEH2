@@ -148,9 +148,10 @@ input::-webkit-input-placeholder {
 .herotable {
     margin-bottom: 10px;
     width: 95%;
+    margin-left: 2.5%
 }
 .herotable td {
-    width: 25%;
+    width: auto;
 }
 
 .ivtable {
