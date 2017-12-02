@@ -97,6 +97,10 @@ input::-webkit-input-placeholder {
     font-style: italic;
 }
 
+#pset1 {
+    background:rgba(255,155,0,0.3);
+}
+
 #subtitle {
     margin-left: 25%;
     text-align: center;
