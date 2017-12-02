@@ -105,8 +105,8 @@ input::-webkit-input-placeholder {
 }
 
 .psets {
-    width: 40%;
-    margin-left: 6.67%;
+    width: 47%;
+    margin-left: 2%;
     margin-top: 15px;
     border: 1px solid silver;
     text-align: center;
@@ -147,8 +147,7 @@ input::-webkit-input-placeholder {
 }
 .herotable {
     margin-bottom: 10px;
-    width: 70%;
-    margin-left:15%;
+    width: 95%;
 }
 .herotable td {
     width: 25%;
