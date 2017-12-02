@@ -37,6 +37,11 @@ input::-webkit-input-placeholder {
     color: #3B444B;
 }
 
+p, label {
+    font-family: FEHFont;
+    font-size: 80%;
+}
+
 #gif {
     position: absolute;
     width: 20%;
