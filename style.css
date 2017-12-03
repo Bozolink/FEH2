@@ -15,6 +15,7 @@ html {
     background-size:cover;
     background-color: black;
 }
+/*td { border: 1px solid green; }*/
 
 .test {
     background-color: red;
@@ -40,6 +41,55 @@ input::-webkit-input-placeholder {
 .labels {
     font-family: FEHFont;
     font-size: 80%;
+}
+
+.plusminusButton {
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+    display: inline-block;
+    font-size: 65%;
+}
+.plusminusButton:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.ivtable input[type=checkbox]:checked + .plusminusButton{
+    background-color: green;
+}
+
+.hiddenCheckbox {
+    display: none;
+}
+
+/*This is the class for the box, ie the div*/
+.summonStrats {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.colorRollCheckbox {
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+.colorRollCheckbox:hover {
+    background:rgba(150,150,150,0.2);
+}
+.summonStrats input[type=checkbox]:checked + .colorRollCheckbox {
+    background:rgba(0,255,0,0.2);
+}
+
+.heroMinusButton, .heroPlusButton {
+    display: inline-block;
 }
 
 #gif {
@@ -122,7 +172,6 @@ input::-webkit-input-placeholder {
 }
 .psets td, th{
     font-family: FEHFont;
-    width: 40%;
     margin-top: 3px;
     text-align: center;
 }
@@ -154,7 +203,6 @@ input::-webkit-input-placeholder {
     font-family: FEHFont;
 }
 .herotable {
-    margin-bottom: 10px;
     width: 95%;
     margin-left: 2.5%
 }
@@ -165,10 +213,10 @@ input::-webkit-input-placeholder {
 .ivtable {
     text-align: center;
     width: 100%;
-
+    font-size: 70%;
 }
 .ivtable td {
-    width: 30%;
+    width: 25%;
 }
 
 .plusBox {

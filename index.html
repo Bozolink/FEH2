@@ -65,7 +65,10 @@
                         <tr class="active">
 
                             <td>
+                                <div class="heroMinusButton" id="heroMinus11">-</div>
+                            </td>
 
+                            <td>
                                 <select name="quantity11" id="quantity11" class="formNumBox">
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
@@ -78,17 +81,13 @@
                                     <option value=9>Nine</option>
                                     <option value=10>Ten</option>
                                 </select>
-
                             </td>
 
                             <td>
-
                                 <input id="hero1" class="formBox2" list="Heroes" placeholder="Hero">
-
                             </td>
 
                             <td>
-
                                 <input type="checkbox" id="3star11" value="3star11">
                                 <label for="3star11" style="display: inline; font-size:80%">3&#9733;
                                 </label>
@@ -100,107 +99,146 @@
                                 <input type="checkbox" id="5star11" value="5star11">
                                 <label for="5star11" style="display: inline; font-size:80%">5&#9733;
                                 </label>
-
                             </td>
 
                             <td>
-
-                                <input type="button" id="ivs1" value="Specify IVs v" id="ivButton1" class="formButton" onclick='showhide("11")'>
-
+                                <input type="button" value="Desired IVs v" id="ivButton11" class="formButton" onclick='showhide("11")'>
                             </td>
 
 
                         </tr>
                     <!-- </table> -->
                         <tr id="hiddenRow11">
-                            <td colspan="3"><div></div></td>
+                            <td colspan="4"><div></div></td>
                             <td><div>
                                 <table id="ivs11" class="ivtable" style="display:none">
                                     <tr>
-                                        <td>
-                                            <label>
-                                                <input type="checkbox" name="hp11" id="hp11m">
-                                                <img src="img/minus.png">
-                                            </label>
-                                        </td>
                                         <td>HP</td>
                                         <td>
-                                            <label>
-                                                <input type="checkbox" name="hp11" id="hp11p">
-                                                <img src="img/plus.png">
-                                            </label>
+
+                                            <input type="checkbox" name="hp11" id="hp11m" class="hiddenCheckbox" checked="checked">
+                                            <label for="hp11m" class="plusminusButton">-</label>
+
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="hp11" id="hp11n" class="hiddenCheckbox" checked="checked">
+                                            <label for="hp11n" class="plusminusButton">N</label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="hp11" id="hp11p" class="hiddenCheckbox" checked="checked">
+                                            <label for="hp11p" class="plusminusButton">+</label>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>
-                                            <label>
-                                                <input type="checkbox" name="atk11" id="atk11m">
-                                                <img src="img/minus.png">
-                                            </label>
-                                        </td>
                                         <td>ATK</td>
                                         <td>
-                                            <label>
-                                                <input type="checkbox" name="atk11" id="atk11p">
-                                                <img src="img/plus.png">
-                                            </label>
+
+                                            <input type="checkbox" name="atk11" id="atk11m" class="hiddenCheckbox" checked="checked">
+                                            <label for="atk11m" class="plusminusButton">-</label>
+
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="atk11" id="atk11n" class="hiddenCheckbox" checked="checked">
+                                            <label for="atk11n" class="plusminusButton">N</label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="atk11" id="atk11p" class="hiddenCheckbox" checked="checked">
+                                            <label for="atk11p" class="plusminusButton">+</label>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>
-                                            <label>
-                                                <input type="checkbox" name="spd11" id="spd11m">
-                                                <img src="img/minus.png">
-                                            </label>
-                                        </td>
                                         <td>SPD</td>
                                         <td>
-                                            <label>
-                                                <input type="checkbox" name="spd11" id="spd11p">
-                                                <img src="img/plus.png">
-                                            </label>
+
+                                            <input type="checkbox" name="spd11" id="spd11m" class="hiddenCheckbox" checked="checked">
+                                            <label for="spd11m" class="plusminusButton">-</label>
+
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="spd11" id="spd11n" class="hiddenCheckbox" checked="checked">
+                                            <label for="spd11n" class="plusminusButton">N</label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="spd11" id="spd11p" class="hiddenCheckbox" checked="checked">
+                                            <label for="spd11p" class="plusminusButton">+</label>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>
-                                            <label>
-                                                <input type="checkbox" name="def11" id="def11m">
-                                                <img src="img/minus.png">
-                                            </label>
-                                        </td>
                                         <td>DEF</td>
                                         <td>
-                                            <label>
-                                                <input type="checkbox" name="def11" id="def11p">
-                                                <img src="img/plus.png">
-                                            </label>
+
+                                            <input type="checkbox" name="def11" id="def11m" class="hiddenCheckbox" checked="checked">
+                                            <label for="def11m" class="plusminusButton">-</label>
+
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="def11" id="def11n" class="hiddenCheckbox" checked="checked">
+                                            <label for="def11n" class="plusminusButton">N</label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="def11" id="def11p" class="hiddenCheckbox" checked="checked">
+                                            <label for="def11p" class="plusminusButton">+</label>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>
-                                            <label>
-                                                <input type="checkbox" name="res11" id="res11m">
-                                                <img src="img/minus.png">
-                                            </label>
-                                        </td>
                                         <td>RES</td>
                                         <td>
-                                            <label>
-                                                <input type="checkbox" name="res11" id="res11p">
-                                                <img src="img/plus.png">
-                                            </label>
+
+                                            <input type="checkbox" name="res11" id="res11m" class="hiddenCheckbox" checked="checked">
+                                            <label for="res11m" class="plusminusButton">-</label>
+
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="res11" id="res11n" class="hiddenCheckbox" checked="checked">
+                                            <label for="res11n" class="plusminusButton">N</label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="res11" id="res11p" class="hiddenCheckbox" checked="checked">
+                                            <label for="res11p" class="plusminusButton">+</label>
                                         </td>
                                     </tr>
+
+
 
                                 </table>
                             </div></td>
                         </tr>
+
+                        <tr class="active">
+                            <td>
+                                <div class="heroPlusButton" id="heroPlus11">+</div>
+                            </td>
+                        </tr>
                     </table>
-                    <div id="addhero12" class="plusBox">+</div>
+
+                    <p style="margin-top:20px; text-align:left; margin-left:4%" class="labels">Summoning Strategy</p>
+                    <div id="summonStrats1" class="summonStrats">
+                        <input type="radio" name="summonStrat" id="colorRoll">
+                        <label for="colorRoll">Only Roll </label>
+
+                        <input type="checkbox" name="red1" id="red1" class="hiddenCheckbox">
+                        <label for="red1" class="colorRollCheckbox">Red</label>
+
+                        <input type="checkbox" name="green1" id="green1" class="hiddenCheckbox">
+                        <label for="green1" class="colorRollCheckbox">Green</label>
+
+                        <input type="checkbox" name="blue1" id="blue1" class="hiddenCheckbox">
+                        <label for="blue1" class="colorRollCheckbox">Blue</label>
+
+                        <input type="checkbox" name="grey1" id="grey1" class="hiddenCheckbox">
+                        <label for="grey1" class="colorRollCheckbox">Colorless</label>
+
+                        <br>
+
+                        <input type="radio" name="summonStrat" id="optimalRoll">
+                        <label for="optimalRoll">Optimal Strategy (see here for details)</label>
+
+                    </div>
+
                 </div>
 
                 <datalist id="Heroes">
